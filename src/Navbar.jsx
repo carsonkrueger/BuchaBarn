@@ -9,11 +9,15 @@ export default () => {
       <img src={logo1} id="logo1" />
 
       <div id="nav-text">
-        <p>Flavors</p>
-        <p>About</p>
-        <p>FAQ</p>
-        <p>Contact</p>
+        <button onClick={click}>Flavors</button>
+        <button>About</button>
+        <button>FAQ</button>
+        <button>Contact</button>
       </div>
     </div>
   );
+};
+
+const click = () => {
+  console.log("hi");
 };
