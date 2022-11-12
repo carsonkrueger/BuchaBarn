@@ -9,10 +9,10 @@ export default () => {
       <img src={logo1} id="logo1" />
 
       <div id="nav-text">
-        <button onClick={click}>Flavors</button>
-        <button>About</button>
-        <button>FAQ</button>
-        <button>Contact</button>
+        <p onClick={click}>Flavors</p>
+        <p>FAQ</p>
+        <p>Pay</p>
+        <p>Contact</p>
       </div>
     </div>
   );
