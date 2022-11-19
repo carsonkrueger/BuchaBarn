@@ -6,18 +6,13 @@ import logo2 from "./images/buchabarn4.png";
 export default () => {
   return (
     <div id="nav">
+      <p className="nav-text">FAQ</p>
+      {/* <p className="nav-text" onClick={click}>
+        Flavors
+      </p> */}
       <img src={logo1} id="logo1" />
-
-      <div id="nav-text">
-        <p onClick={click}>Flavors</p>
-        <p>FAQ</p>
-        <p>Pay</p>
-        <p>Contact</p>
-      </div>
+      {/* <p className="nav-text">Pay</p> */}
+      <p className="nav-text">Contact</p>
     </div>
   );
-};
-
-const click = () => {
-  console.log("hi");
 };

@@ -1,13 +1,9 @@
 .flavors > p {
   font-family: "Quicksand-regular";
-  color: white;
+  color: black;
   font-size: 1.5rem;
-  margin-top: -1rem;
-  background-color: rgb(217, 180, 67);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .flavors {
-  min-height: 5rem;
+  min-height: 50rem;
 }
