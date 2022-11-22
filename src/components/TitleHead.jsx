@@ -1,18 +1,22 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "../styles/body.css";
 import logo from "../images/buchabarn4(2).png";
 
 export default () => {
   return (
-    <div class="body">
+    <div className="body">
       <img src={logo} />
-      <a
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         id="order-btn"
         href="https://square.link/u/A17ZE6oO?src=sheet"
         target="_blank"
       >
         Order KidBucha
-      </a>
+      </motion.a>
     </div>
   );
 };

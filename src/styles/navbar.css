@@ -14,7 +14,7 @@
 
 .nav-text {
   color: rgb(0, 0, 0);
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: "Quicksand-Regular";
   user-select: none;
   padding-left: 2%;
@@ -53,6 +53,10 @@
     padding-bottom: 1rem;
     min-height: 3rem;
     text-align: center;
+  }
+
+  .nav-text {
+    font-size: 1.8rem;
   }
 
   #logo1 {

@@ -1,19 +1,19 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import "./styles/app.css";
 
 import Navbar from "./components/Navbar";
-import Body from "./components/Body";
+import TitleHead from "./components/TitleHead";
 import FaqBody from "./components/FaqBody";
+import AboutHead from "./components/AboutHead";
 
 export default () => {
-  const faqRef = useRef(null);
-
   return (
     <>
-      <Navbar scrollFaq={faqRef} />
-      <Body ref={faqRef} />
+      <Navbar />
+      <TitleHead />
       <FaqBody />
+      <AboutHead />
     </>
   );
 };

@@ -1,0 +1,7 @@
+.about-head {
+  display: block;
+  background-image: url("../images/forest-topdown.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
