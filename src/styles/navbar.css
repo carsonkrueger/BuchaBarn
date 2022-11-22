@@ -1,20 +1,33 @@
+#nav-container {
+  display: fixed;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
 #nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
 }
 
 .nav-text {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 1.7rem;
   font-family: "Quicksand-Regular";
   user-select: none;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 #nav > img {
   user-select: none;
+  text-align: center;
+}
+
+#logo1 {
+  object-fit: contain;
 }
 
 /* desktop */
@@ -23,14 +36,13 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     min-height: 4rem;
-    justify-content: center;
   }
 
-  #nav > img {
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 5rem;
-    max-height: 5rem;
+  #logo1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 6rem;
+    max-height: 6rem;
   }
 }
 
@@ -40,10 +52,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     min-height: 3rem;
-    justify-content: space-evenly;
+    text-align: center;
   }
 
-  #nav > img {
-    max-height: 5rem;
+  #logo1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 6rem;
   }
 }

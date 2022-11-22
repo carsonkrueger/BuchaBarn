@@ -1,17 +1,28 @@
 .body {
   display: flex;
+  flex-direction: column;
   background-size: cover;
-}
-
-.body {
   justify-content: center;
+  align-items: center;
   background-image: url("../images/autumnwood1.jpg");
   background-position: center;
   background-attachment: fixed;
 }
 
+#order-btn {
+  color: white;
+  border: 1px solid white;
+  font-family: "Quicksand-regular";
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.344);
+  user-select: none;
+}
+
 .body > img {
   object-fit: contain;
+  max-width: 36rem;
 }
 
 /* Desktop */
@@ -24,6 +35,6 @@
 /* Mobile */
 @media screen and (max-width: 750px) {
   .body {
-    min-height: 40rem;
+    min-height: 42rem;
   }
 }

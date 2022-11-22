@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "./styles/app.css";
 
-import Navbar from "./Navbar";
-import Body from "./Body";
-import Flavors from "./Flavors";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import FaqBody from "./components/FaqBody";
 
-export default () => (
-  <>
-    <Navbar />
-    <Body />
-    <Flavors />
-  </>
-);
+export default () => {
+  const faqRef = useRef(null);
+
+  return (
+    <>
+      <Navbar scrollFaq={faqRef} />
+      <Body ref={faqRef} />
+      <FaqBody />
+    </>
+  );
+};

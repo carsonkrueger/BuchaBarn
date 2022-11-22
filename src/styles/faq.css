@@ -1,0 +1,38 @@
+.faq {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 2rem;
+  max-width: 75%;
+  min-width: 75%;
+}
+
+#question {
+  font-size: 2rem;
+  font-family: "Quicksand-regular";
+  color: black;
+  font-size: 1.5rem;
+}
+
+#answer {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: "Quicksand-regular";
+  color: black;
+  font-size: 1.5rem;
+  white-space: pre-line;
+}
+
+/* Desktop */
+@media screen and (min-width: 1400px) {
+  .faq {
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 1400px) {
+  .faq {
+  }
+}

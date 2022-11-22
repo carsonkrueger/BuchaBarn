@@ -1,0 +1,27 @@
+.faq-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+  .faq-body {
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px) {
+  .faq-body {
+  }
+}
