@@ -7,7 +7,7 @@
 }
 
 .question {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -33,18 +33,18 @@ a > img {
   overflow: hidden;
 }
 
+/* Mobile */
+@media screen and (max-width: 1399px) {
+  .faq {
+    max-width: 80%;
+    min-width: 75%;
+  }
+}
+
 /* Desktop */
 @media screen and (min-width: 1400px) {
   .faq {
     max-width: 60%;
     min-width: 60%;
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 1400px) {
-  .faq {
-    max-width: 80%;
-    min-width: 75%;
   }
 }
