@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import "../styles/body.css";
+import "../styles/titlehead.css";
 import logo from "../images/buchabarn4(2).png";
 
 export default () => {
   return (
-    <div className="body">
+    <div className="title-head">
       <img src={logo} />
       <motion.a
         whileHover={{ scale: 1.1 }}

@@ -27,3 +27,8 @@
   font-family: "Quicksand-SemiBold";
   src: url(../fonts/Quicksand-SemiBold.ttf);
 }
+
+@font-face {
+  font-family: "Better-Grade";
+  src: url(../fonts/BetterGrade-519DV.ttf);
+}

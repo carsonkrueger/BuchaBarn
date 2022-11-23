@@ -1,12 +1,10 @@
 h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: "Quicksand-regular";
   font-weight: normal;
-  margin: 1rem;
-  border-bottom: 2px solid black;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 3px;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
 }
 
 .faq-body {
@@ -21,18 +19,26 @@ h1 {
   padding-bottom: 4%;
 }
 
-/* Desktop */
-@media screen and (min-width: 1000px) {
-  .faq-body {
-  }
-}
-
 a {
   text-decoration: none;
 }
 
-/* Mobile */
-@media screen and (max-width: 1000px) {
+.about-para {
+  font-size: 1.2rem;
+  font-family: "Quicksand-regular";
+  margin-left: 10%;
+  margin-right: 10%;
+  white-space: pre-line;
+}
+
+/* Desktop */
+/* @media screen and (min-width: 1000px) {
   .faq-body {
   }
-}
+} */
+
+/* Mobile */
+/* @media screen and (max-width: 1000px) {
+  .faq-body {
+  }
+} */

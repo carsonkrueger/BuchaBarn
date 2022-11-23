@@ -5,14 +5,11 @@ import "../styles/navbar.css";
 import logo1 from "../images/buchabarn4(1.5).png";
 import logo2 from "../images/buchabarn4.png";
 
-export default ({ faqRef }) => {
-  const handleClick = () => {
-    faqRef.current.scrollIntoView({ behavior: "smooth" });
-    // faqRef.current.scrollInto
-  };
-
-  const prevDef = (e) => {
+export default ({ faqRef, aboutRef }) => {
+  const handleClick = (e) => {
     e.preventDefault();
+    // ref.current?.scrollIntoView(); // { behavior: "smooth" }
+    aboutRef.scrollIntoView();
   };
 
   return (
@@ -21,8 +18,8 @@ export default ({ faqRef }) => {
         <motion.a
           whileHover={{ scale: 1.1 }}
           className="nav-text"
-          href="_blank"
-          onClick={(e) => prevDef(e)}
+          href="#faqs"
+          // onClick={(e) => handleClick(e)}
         >
           FAQ
         </motion.a>
@@ -30,7 +27,7 @@ export default ({ faqRef }) => {
           whileHover={{ scale: 1.1 }}
           className="nav-text"
           href="_blank"
-          onClick={(e) => prevDef(e)}
+          onClick={(e) => handleClick(e)}
         >
           About
         </motion.a>
@@ -47,7 +44,7 @@ export default ({ faqRef }) => {
           whileHover={{ scale: 1.1 }}
           className="nav-text"
           href="_blank"
-          onClick={(e) => prevDef(e)}
+          // onClick={(e) => handleClick(e)}
         >
           Contact
         </motion.a>

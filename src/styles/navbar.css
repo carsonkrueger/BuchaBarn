@@ -14,11 +14,8 @@
 
 .nav-text {
   color: rgb(0, 0, 0);
-  font-size: 2rem;
   font-family: "Quicksand-Regular";
   user-select: none;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
 #nav > img {
@@ -31,11 +28,17 @@
 }
 
 /* desktop */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 751px) {
   #nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
     min-height: 4rem;
+  }
+
+  .nav-text {
+    font-size: 1.7rem;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   #logo1 {
@@ -56,12 +59,14 @@
   }
 
   .nav-text {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   #logo1 {
-    margin-left: 5%;
-    margin-right: 5%;
-    max-height: 6rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    max-height: 5.5rem;
   }
 }

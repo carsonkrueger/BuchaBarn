@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "../styles/faqbody.css";
 import Faq from "./Faq";
 
 export default () => {
-  const [faqList, setFaqList] = useState([
+  const faqList = [
     {
       question:
         "Why KidBucha? How is it different from other Kombucha on the market?",
@@ -47,11 +47,11 @@ export default () => {
       answer:
         "You came to the right place!! KidBucha can only be sold within the state of Utah. Please order online for local delivery, or you can place an order for pick up at The Bucha Barn in Mapleton, Utah. If you have any questions, feel free to contact us.",
     },
-  ]);
+  ];
 
   return (
     <div className="faq-body">
-      {/* <h1>Frequently Asked Questions</h1> */}
+      <h1>Frequently Asked Questions</h1>
       {faqList.map((item, idx) => (
         <Faq key={idx} question={item.question} answer={item.answer} />
       ))}
