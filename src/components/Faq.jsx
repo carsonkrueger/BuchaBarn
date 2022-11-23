@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef } from "react";
 
 import "../styles/faq.css";
 import plus from "../images/plus.png";
@@ -6,12 +6,16 @@ import minus from "../images/minus.png";
 
 import Collapsible from "./Collapsible";
 
-export default ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+export default ({ idx, openIdx, setOpenIdx, question, answer }) => {
+  const isOpened = useRef();
 
   const onClickFaq = (e) => {
     e.preventDefault();
-    setIsOpen((prev) => !prev);
+    if (idx === openIdx) {
+      setOpenIdx(null);
+    } else {
+      setOpenIdx(idx);
+    }
   };
 
   return (
@@ -20,7 +24,7 @@ export default ({ question, answer }) => {
         <img src={plus} />
         {question}
       </a>
-      <Collapsible isOpen={isOpen}>
+      <Collapsible isOpen={openIdx === idx}>
         <p className="answer">{answer}</p>
       </Collapsible>
     </div>

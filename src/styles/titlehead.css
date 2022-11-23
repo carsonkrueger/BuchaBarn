@@ -7,7 +7,7 @@
   background-image: url("../images/autumnwood1.jpg");
   background-position: center;
   background-attachment: fixed;
-  min-height: 80vh;
+  /* min-height: 45rem; */
 }
 
 #order-btn {
@@ -19,24 +19,24 @@
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.344);
   user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .title-head > img {
   object-fit: contain;
-  max-width: 25rem;
   user-select: none;
 }
 
 /* Desktop */
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 751px) {
   .title-head {
-    min-height: 80vh;
+    min-height: 48rem;
   }
 }
 
 /* Mobile */
-/* @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .title-head {
-    min-height: 80vh;
+    min-height: 45rem;
   }
-} */
+}

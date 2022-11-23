@@ -17,42 +17,44 @@ export default ({ faqRef, aboutRef }) => {
   };
 
   return (
-    <div id="nav-container">
-      <div id="nav">
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          className="nav-text"
-          href="_blank"
-          onClick={(e) => onClickFaq(e)}
-        >
-          FAQ
-        </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          className="nav-text"
-          href="_blank"
-          onClick={(e) => onClickAbout(e)}
-        >
-          About
-        </motion.a>
-        <img src={logo1} id="logo1" />
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          className="nav-text"
-          href="https://square.link/u/A17ZE6oO?src=sheet"
-          target="_blank"
-        >
-          Order
-        </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          className="nav-text"
-          href="_blank"
-          // onClick={(e) => handleClick(e)}
-        >
-          Contact
-        </motion.a>
-      </div>
+    // <div id="nav-container">
+    <div id="nav">
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        className="nav-text"
+        href="_blank"
+        onClick={(e) => onClickFaq(e)}
+      >
+        FAQ
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        className="nav-text"
+        href="_blank"
+        onClick={(e) => onClickAbout(e)}
+      >
+        About
+      </motion.a>
+
+      <img src={logo1} id="logo1" />
+
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        className="nav-text"
+        href="https://square.link/u/A17ZE6oO?src=sheet"
+        target="_blank"
+      >
+        Order
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        className="nav-text"
+        href="_blank"
+        // onClick={(e) => handleClick(e)}
+      >
+        Contact
+      </motion.a>
     </div>
+    // </div>
   );
 };

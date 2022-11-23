@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../styles/faqbody.css";
 import Faq from "./Faq";
 
 const FaqBody = React.forwardRef((props, ref) => {
+  const [openIdx, setOpenIdx] = useState(null);
+
   const faqList = [
     {
       question:
@@ -53,7 +55,14 @@ const FaqBody = React.forwardRef((props, ref) => {
     <div ref={ref} className="faq-body">
       <h1>Frequently Asked Questions</h1>
       {faqList.map((item, idx) => (
-        <Faq key={idx} question={item.question} answer={item.answer} />
+        <Faq
+          key={idx}
+          idx={idx}
+          openIdx={openIdx}
+          setOpenIdx={setOpenIdx}
+          question={item.question}
+          answer={item.answer}
+        />
       ))}
     </div>
   );
