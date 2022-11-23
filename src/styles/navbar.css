@@ -10,6 +10,7 @@
   align-items: center;
   background-color: rgb(255, 255, 255);
   justify-content: center;
+  max-width: 100%;
 }
 
 .nav-text {
@@ -53,8 +54,8 @@
 /* mobile */
 @media screen and (max-width: 750px) {
   #nav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     text-align: center;
   }
 
@@ -65,6 +66,7 @@
   }
 
   #logo1 {
+    display: none;
     margin-left: 1.5%;
     margin-right: 1%;
     max-height: 4rem;
