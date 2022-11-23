@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 import "../styles/faq.css";
 import plus from "../images/plus.png";
@@ -21,7 +22,10 @@ export default ({ idx, openIdx, setOpenIdx, question, answer }) => {
   return (
     <div className="faq">
       <a className="question" href="#" onClick={(e) => onClickFaq(e)}>
-        <img src={plus} />
+        <motion.img
+          animate={{ rotate: openIdx === idx ? 180 : -180 }}
+          src={openIdx === idx ? minus : plus}
+        />
         {question}
       </a>
       <Collapsible isOpen={openIdx === idx}>
