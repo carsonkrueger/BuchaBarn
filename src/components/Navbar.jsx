@@ -6,10 +6,14 @@ import logo1 from "../images/buchabarn4(1.5).png";
 import logo2 from "../images/buchabarn4.png";
 
 export default ({ faqRef, aboutRef }) => {
-  const handleClick = (e) => {
+  const onClickFaq = (e) => {
     e.preventDefault();
-    // ref.current?.scrollIntoView(); // { behavior: "smooth" }
-    aboutRef.scrollIntoView();
+    faqRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const onClickAbout = (e) => {
+    e.preventDefault();
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -18,8 +22,8 @@ export default ({ faqRef, aboutRef }) => {
         <motion.a
           whileHover={{ scale: 1.1 }}
           className="nav-text"
-          href="#faqs"
-          // onClick={(e) => handleClick(e)}
+          href="_blank"
+          onClick={(e) => onClickFaq(e)}
         >
           FAQ
         </motion.a>
@@ -27,7 +31,7 @@ export default ({ faqRef, aboutRef }) => {
           whileHover={{ scale: 1.1 }}
           className="nav-text"
           href="_blank"
-          onClick={(e) => handleClick(e)}
+          onClick={(e) => onClickAbout(e)}
         >
           About
         </motion.a>

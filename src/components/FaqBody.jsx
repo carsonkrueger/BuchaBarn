@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/faqbody.css";
 import Faq from "./Faq";
 
-export default () => {
+const FaqBody = React.forwardRef((props, ref) => {
   const faqList = [
     {
       question:
@@ -50,11 +50,13 @@ export default () => {
   ];
 
   return (
-    <div className="faq-body">
+    <div ref={ref} className="faq-body">
       <h1>Frequently Asked Questions</h1>
       {faqList.map((item, idx) => (
         <Faq key={idx} question={item.question} answer={item.answer} />
       ))}
     </div>
   );
-};
+});
+
+export default FaqBody;
