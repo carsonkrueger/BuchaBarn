@@ -22,8 +22,8 @@ export default ({ idx, openIdx, setOpenIdx, question, answer }) => {
   return (
     <div className="faq">
       <a className="question" href="#" onClick={(e) => onClickFaq(e)}>
-        <motion.img
-          animate={{ rotate: openIdx === idx ? 180 : -180 }}
+        <img
+          // animate={{ rotate: openIdx === idx ? 180 : -180 }}
           src={openIdx === idx ? minus : plus}
         />
         {question}

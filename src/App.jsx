@@ -1,29 +1,25 @@
 import React, { createRef } from "react";
+import { Route, Routes } from "react-router-dom";
 
 import "./styles/app.css";
-
 import Navbar from "./components/Navbar";
-import TitleHead from "./components/TitleHead";
-import FaqBody from "./components/FaqBody";
-import AboutHead from "./components/AboutHead";
-import AboutBody from "./components/AboutBody";
 
-const App = React.forwardRef((props, ref) => {
-  // const aboutRef = useRef(document.getElementById("aboutComponent"));
-  // const faqRef = useRef(document.getElementById("faqComponent"));
-  // const ref = createRef(null);
-  const aboutRef = createRef();
-  const faqRef = createRef();
+import Home from "./Home";
+import Shop from "./Shop";
+import About from "./About";
 
+const App = (props) => {
   return (
     <>
-      <Navbar faqRef={faqRef} aboutRef={aboutRef} />
-      <TitleHead />
-      <FaqBody ref={faqRef} id="faqComponent" />
-      <AboutHead />
-      <AboutBody ref={aboutRef} id="aboutComponent" />
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/Shop" element={<Shop />}></Route>
+        <Route path="/About" element={<About />}></Route>
+      </Routes>
     </>
   );
-});
+};
 
 export default App;
