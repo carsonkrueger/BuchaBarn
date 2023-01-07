@@ -1,0 +1,27 @@
+.footer {
+  background-color: rgb(59, 59, 59);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 35rem;
+  padding-right: 35rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-div > a {
+  min-width: 4.5rem;
+  text-decoration: none;
+  font-family: "Quicksand-regular";
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.foot-div {
+  /* padding-left: 3rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

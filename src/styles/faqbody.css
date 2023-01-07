@@ -3,7 +3,7 @@ h1 {
   font-family: "Quicksand-regular";
   font-weight: normal;
   margin-bottom: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
   text-align: center;
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import "../styles/titlehead.css";
 import logo from "../images/buchabarn4(2).png";
@@ -12,10 +13,12 @@ export default () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         id="order-btn"
-        href="https://square.link/u/A17ZE6oO?src=sheet"
+        // href="https://square.link/u/A17ZE6oO?src=sheet"
         target="_blank"
       >
-        Order KidBucha
+        <Link to="/shop" style={{ color: "white" }}>
+          Order KidBucha
+        </Link>
       </motion.a>
     </div>
   );

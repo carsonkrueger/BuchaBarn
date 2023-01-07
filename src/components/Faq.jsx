@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { motion } from "framer-motion";
+import React from "react";
+// import { motion } from "framer-motion";
 
 import "../styles/faq.css";
 import plus from "../images/plus.png";
@@ -8,8 +8,6 @@ import minus from "../images/minus.png";
 import Collapsible from "./Collapsible";
 
 export default ({ idx, openIdx, setOpenIdx, question, answer }) => {
-  const isOpened = useRef();
-
   const onClickFaq = (e) => {
     e.preventDefault();
     if (idx === openIdx) {

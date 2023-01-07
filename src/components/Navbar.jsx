@@ -20,16 +20,6 @@ export default () => {
   return (
     // <div id="nav-container">
     <div id="nav">
-      {/* <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="nav-text"
-        href="_blank"
-        onClick={(e) => onClickFaq(e)}
-      >
-        FAQ
-      </motion.a> */}
-
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -59,7 +49,6 @@ export default () => {
         whileTap={{ scale: 0.9 }}
         className="nav-text"
         href="_blank"
-        // onClick={(e) => onClickAbout(e)}
       >
         <Link to="/About" style={{ color: "black" }}>
           About
@@ -71,9 +60,10 @@ export default () => {
         whileTap={{ scale: 0.9 }}
         className="nav-text"
         href="_blank"
-        // onClick={(e) => handleClick(e)}
       >
-        Contact
+        <Link to="/Contact" style={{ color: "black" }}>
+          Contact
+        </Link>
       </motion.a>
     </div>
     // </div>
